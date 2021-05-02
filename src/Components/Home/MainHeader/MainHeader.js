@@ -12,7 +12,7 @@ const MainHeader = () => {
                 <div className="text-white text-center">
                     <p style={{ fontSize: "60px" }}>Hi, I am Avishek Talukdar</p>
                     <p style={{ fontSize: "30px" }}>Welcome to My Website</p>
-                    <Button variant="outline-secondary" className="text-white">My Resume</Button>
+                    <Button variant="outline-secondary" className="text-white" href="https://drive.google.com/uc?export=download&id=1-6AOTLtfwigZ27q7GdFOJCiEHpK_ioWM">My Resume</Button>
                 </div>
             </div>
         </div>
