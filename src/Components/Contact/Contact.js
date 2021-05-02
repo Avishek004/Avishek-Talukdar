@@ -1,8 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import { Button, Form } from 'react-bootstrap';
-import { useState } from 'react';
-import validator from 'validator';
 
 
 const Contact = () => {
@@ -19,17 +17,6 @@ const Contact = () => {
         event.target.reset();
     }
 
-    const [emailError, setEmailError] = useState('')
-    const validateEmail = (event) => {
-        var email = event.target.value
-
-        if (validator.isEmail(email)) {
-            setEmailError('Valid Email :')
-        } else {
-            setEmailError('Enter valid Email!')
-        }
-    }
-
 
     return (
         <div className="p-5">
@@ -43,8 +30,7 @@ const Contact = () => {
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control name="email" type="email" placeholder="Enter Your Email" onSubmit={(event) => validateEmail(event)} required />
-                            <span style={{ fontWeight: 'bold', color: 'red' }}>{emailError}</span>
+                            <Form.Control name="email" type="email" placeholder="Enter Your Email" required />
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
                             <Form.Label>Your Message</Form.Label>
