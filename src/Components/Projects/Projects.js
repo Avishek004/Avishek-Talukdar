@@ -6,7 +6,7 @@ import BestOfTheBest from '../Images/BestOfTheBest.PNG';
 
 const Projects = () => {
     return (
-        <div className="d-flex justify-content-center text-center m-5" id="projects">
+        <div className="d-flex justify-content-center text-center p-5" id="projects">
             <div className="w-75">
                 <div className="mb-5">
                     <h1>My Projects</h1>

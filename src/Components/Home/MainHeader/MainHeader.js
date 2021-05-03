@@ -4,7 +4,7 @@ import Profile from '../../Images/Profile.jpg';
 
 const MainHeader = () => {
     return (
-        <div className="row d-flex align-items-center w-100 pb-5" style={{ height: "100%" }}>
+        <div className="row d-flex align-items-center w-100 pb-5" style={{ height: "100%", margin: "0" }}>
             <div className="col-md-5 offset-md-1 col-sm-6 col-12">
                 <img src={Profile} alt="" className="img-fluid" />
             </div>
