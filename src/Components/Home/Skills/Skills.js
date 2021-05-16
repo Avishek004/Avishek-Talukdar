@@ -3,7 +3,7 @@ import { Line } from 'rc-progress';
 
 const Skills = () => {
     return (
-        <div className="text-center">
+        <div className="text-center m-0 p-0 w-100">
             <h1>My Skills</h1>
             <h3>HTML <Line percent="90" strokeWidth="1" strokeColor="#05467f" style={{ width: "20em" }} /></h3>
             <h3>CSS <Line percent="90" strokeWidth="1" strokeColor="#05467f" style={{ width: "20em" }} /></h3>
