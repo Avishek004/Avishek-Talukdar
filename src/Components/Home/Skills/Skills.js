@@ -1,15 +1,15 @@
 import React from 'react';
-import { Line } from 'rc-progress';
+import { Progress } from 'antd';
 
 const Skills = () => {
     return (
         <div className="w-100">
             <div className="text-center m-0 p-0">
                 <h1>My Skills</h1>
-                <h3>HTML <Line percent="90" strokeWidth="1" strokeColor="#05467f" style={{ width: "20rem" }} /></h3>
-                <h3>CSS <Line percent="90" strokeWidth="1" strokeColor="#05467f" style={{ width: "20rem" }} /></h3>
-                <h3>JavaScript <Line percent="90" strokeWidth="1" strokeColor="#05467f" style={{ width: "20rem" }} /></h3>
-                <h3>React <Line percent="75" strokeWidth="1" strokeColor="#05467f" style={{ width: "20rem" }} /></h3>
+                <h3>HTML <Progress percent={90} /></h3>
+                <h3>CSS <Progress percent={90} /></h3>
+                <h3>JavaScript <Progress percent={90} /></h3>
+                <h3>React <Progress percent={90} /></h3>
             </div>
         </div>
     );

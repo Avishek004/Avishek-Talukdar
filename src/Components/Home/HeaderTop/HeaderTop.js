@@ -3,7 +3,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 const HeaderTop = () => {
     return (
-        <div style={{margin: 0, padding: 0}}>
+        <div style={{margin: 0, padding: 0, width: '100%'}}>
             <Navbar collapseOnSelect expand="lg" fixed="top" style={{ backgroundColor: '#02434f' }}>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
