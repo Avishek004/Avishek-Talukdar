@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 const MainHeader = () => {
     return (
-        <div className="d-flex align-items-center justify-content-center w-100 p-5" style={{ height: "790px", margin: 0 }}>
+        <div className="d-flex align-items-center justify-content-center vh-100 m-0 w-100 p-5">
             <div className="text-white text-center">
                 <p style={{ fontSize: "2.5em" }}>Hello, I'm Avishek Talukdar</p>
                 <p style={{ fontSize: "2em" }} id="Type">

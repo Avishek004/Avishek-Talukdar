@@ -1,10 +1,12 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
+import whiteLogo from '../../Images/logo-white.png';
 
 const HeaderTop = () => {
     return (
-        <div style={{margin: 0, padding: 0, width: '100%'}}>
-            <Navbar collapseOnSelect expand="lg" fixed="top" style={{ backgroundColor: '#02434f' }}>
+        <div className="m-0 p-0 w-100">
+            <Navbar collapseOnSelect expand="lg">
+                <Navbar.Brand href="#"><img src={whiteLogo} alt="" className="w-25 h-25 ml-5" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto mr-5">
