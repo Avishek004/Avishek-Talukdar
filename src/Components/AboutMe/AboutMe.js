@@ -11,7 +11,7 @@ const AboutMe = () => {
             <Container>
                 <div id="aboutMe">
                     <h1 className="text-uppercase text-center pb-3">About Me</h1>
-                    <div className="row">
+                    <div className="row align-items-center">
                         <div className="col-md-6 col-sm-6 col-12 p-3">
                             <img src={Profile} alt="" className="img-fluid" />
                         </div>
@@ -23,17 +23,17 @@ const AboutMe = () => {
                             <div className="">
                                 <ul className="list-inline social-icon">
                                     <li className="list-inline-item">
-                                        <a href="//https://www.facebook.com/avishektalukder.007/">
+                                        <a href="https://www.facebook.com/avishektalukder.007/" target="_blank" rel="noreferrer">
                                             <FontAwesomeIcon icon={faFacebook} />
                                         </a>
                                     </li>
                                     <li className="list-inline-item">
-                                        <a href="//https://www.linkedin.com/in/avishektalukder004/">
+                                        <a href="https://www.linkedin.com/in/avishektalukder004/" target="_blank" rel="noreferrer">
                                             <FontAwesomeIcon icon={faLinkedin} />
                                         </a>
                                     </li>
                                     <li className="list-inline-item">
-                                        <a href="//https://github.com/Avishek004/">
+                                        <a href="https://github.com/Avishek004/" target="_blank" rel="noreferrer">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </li>
