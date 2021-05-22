@@ -5,7 +5,7 @@ import Contact from '../../Contact/Contact';
 import Projects from '../../Projects/Projects';
 import Header from '../Header/Header';
 import AboutMe from '../../AboutMe/AboutMe';
-import Skills from '../Skills/Skills';
+import Skills from '../../Skills/Skills';
 
 const Home = () => {
     return (
