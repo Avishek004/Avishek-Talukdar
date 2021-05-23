@@ -46,19 +46,19 @@ const professionalSkills = [
 
 const Skills = () => {
     return (
-        <section className="my-skills" id="skills">
+        <section className="pt-5 pb-5" id="skills">
             <Container>
-                <div className="row">
-                    <div className="col-md-6 col-sm-6 col-12">
-                        <h3 className="text-center">Technical Skills</h3>
+                <div className="row align-items-center">
+                    <div className="col-md-6 col-sm-6 col-12 pb-3">
+                        <h3 className="text-center pb-3">Technical Skills</h3>
                         <div className="technical">
                             {
                                 technicalSkills.map(technicalSkill => <Technical technicalSkill={technicalSkill} ></Technical>)
                             }
                         </div>
                     </div>
-                    <div className="col-md-6 col-sm-6 col-12">
-                        <h3 className="text-center">Professional Skills</h3>
+                    <div className="col-md-6 col-sm-6 col-12 text-center">
+                        <h3 className="pb-3">Professional Skills</h3>
                         <div className="row">
                             {
                                 professionalSkills.map(professionalSkill => <Professional professionalSkill={professionalSkill} ></Professional>)
