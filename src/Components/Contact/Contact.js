@@ -1,6 +1,29 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Col, Container, Form } from 'react-bootstrap';
+import call from '../Images/call.png';
+import mail from '../Images/mail.png';
+import location from '../Images/location.png';
+import Card from './Card';
+
+
+const cardData = [
+    {
+        name: 'Phone',
+        image: call,
+        info: '+8801706499331'
+    },
+    {
+        name: 'Email',
+        image: mail,
+        info: 'avitalukder20158@gmail.com'
+    },
+    {
+        name: 'Location',
+        image: location,
+        info: 'Room No 569, QK Hall, CUET'
+    }
+]
 
 
 const Contact = () => {
@@ -19,30 +42,35 @@ const Contact = () => {
 
 
     return (
-        <div className="p-5">
+        <Container className="p-5">
             <h1 className="text-center pb-3">Contact With Me</h1>
-            <div className="d-flex justify-content-center">
-                <div className="" style={{ width: '600px' }}>
-                    <Form onSubmit={sendEmail}>
-                        <Form.Group>
-                            <Form.Label>Your Name</Form.Label>
+            <div className="row p-3">
+                {
+                    cardData.map(card => <Card card={card} ></Card>)
+                }
+            </div>
+            <div className="">
+                <Form onSubmit={sendEmail}>
+                    <Form.Row>
+                        <Form.Group as={Col}>
                             <Form.Control name="name" type="text" placeholder="Enter Your Name" required />
                         </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Email address</Form.Label>
+                        <Form.Group as={Col}>
                             <Form.Control name="email" type="email" placeholder="Enter Your Email" required />
                         </Form.Group>
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Your Message</Form.Label>
-                            <Form.Control name="message" as="textarea" rows={3} placeholder="Enter Your Message" required />
-                        </Form.Group>
-                        <div className="d-flex justify-content-center">
-                            <Button variant="primary" type="submit">Submit</Button>
-                        </div>
-                    </Form>
-                </div>
+                    </Form.Row>
+                    <Form.Group>
+                        <Form.Control name="subject" as="textarea" placeholder="Enter Subject" required />
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Control name="message" as="textarea" rows={3} placeholder="Enter Your Message" required />
+                    </Form.Group>
+                    <div className="d-flex justify-content-center">
+                        <Button variant="primary" type="submit">Submit</Button>
+                    </div>
+                </Form>
             </div>
-        </div>
+        </Container>
     );
 };
 
